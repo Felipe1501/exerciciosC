@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+
+#define TAM_VETOR 2
 int main(){
 
-int n[20], temp, i, j;
+int n[TAM_VETOR], temp, i, j;
 
-    for(i=0; i<20; i++){
+    for(i=0; i<TAM_VETOR; i++){
        scanf("%d", &n[i]);
     }
 
@@ -14,7 +16,7 @@ int n[20], temp, i, j;
         n[j] = temp;
     }
 
-    for(i=0; i<20; i++){
+    for(i=0; i<TAM_VETOR; i++){
         printf("N[%d] =  %d\n", i, n[i]);
     }
 
